@@ -1,0 +1,1106 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://beginner-sql-tutorial.com/sql-query-tuning.htm
+Subject: SQL Query Tuning or Query Optimization
+Date: Fri, 10 Jan 2025 09:48:20 -0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----"
+
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: text/html
+Content-ID: <frame-7BBBF575292D734DBE2B6506543B34A1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://beginner-sql-tutorial.com/sql-query-tuning.htm
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"https://www.w3.org/1999/x=
+html" xml:lang=3D"en" lang=3D"en"><head><meta http-equiv=3D"Content-Type" c=
+ontent=3D"text/html; charset=3Dwindows-1252">
+<title>SQL Query Tuning or Query Optimization</title>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+
+<link rel=3D"stylesheet" href=3D"https://beginner-sql-tutorial.com/images/B=
+rightSide.css" type=3D"text/css">
+<meta name=3D"keywords" content=3D"sql tuning, sql query optimization">
+<meta name=3D"description" content=3D" How to use sql where clause. Using w=
+here condition to filter data. A tutorial on SQL programming. Your Guide in=
+ learning SQL.">
+</head>
+<body style=3D"">
+<div id=3D"wrap">
+  <div id=3D"header">
+    <h1 id=3D"logo">Beginner SQL Tutorial</h1>
+    <h2 id=3D"slogan">Learn SQL Programming...</h2>
+
+    <!-- SiteSearch Google -->
+
+<form action=3D"https://www.google.com/cse" id=3D"cse-search-box" target=3D=
+"_blank" class=3D"searchform">
+  <div>
+   =20
+   =20
+    <input type=3D"text" name=3D"q" size=3D"31" placeholder=3D"" style=3D"b=
+ackground: url(&quot;https://www.google.com/cse/static/images/1x/en/brandin=
+g.png&quot;) left 9px top 50% no-repeat rgb(255, 255, 255);">
+    <input type=3D"submit" name=3D"sa" value=3D"Search">
+  </div>
+</form>
+
+
+<!-- SiteSearch Google -->
+
+    <ul>
+<li id=3D"current"><a href=3D"https://beginner-sql-tutorial.com/sql.htm"><s=
+pan>Home</span></a></li>
+      <li><a href=3D"https://beginner-sql-tutorial.com/contact-us.html"><sp=
+an>Contact</span></a></li>
+    </ul>
+  </div>
+    <div id=3D"division" align=3D"center">
+     =20
+      <!-- Begginner SQL Resp -->
+      <ins class=3D"adsbygoogle" style=3D"display:block" data-ad-client=3D"=
+ca-pub-7145876768079602" data-ad-slot=3D"2642051340" data-ad-format=3D"auto=
+" data-full-width-responsive=3D"true"></ins>
+     =20
+
+	</div>
+  <div id=3D"content-wrap"> <!--<img src=3D"images/headerphoto.jpg" width=
+=3D"821" height=3D"120" alt=3D"headerphoto" class=3D"no-border" /> -->
+
+    <div class=3D"left_cat"><p>SQL Commands</p><img src=3D"https://beginner=
+-sql-tutorial.com/images/menuIcon.png" class=3D"menus_icon"></div>
+   =20
+    <div id=3D"sidebar">
+      <h1><span class=3D"lightblue">Learning SQL</span></h1>
+       <ul class=3D"sidemenu">
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-comman=
+ds.htm" title=3D"SQL Commands: Commands in SQL, Querys, Statements" target=
+=3D"_blank"> SQL Commands</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-select=
+-statement.htm" title=3D"SQL SELECT, SELECT Command in SQL" target=3D"_blan=
+k"> SQL SELECT</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-aliase=
+s.htm" title=3D"SQL Aliases: Defined for Columns and Tables for Better Read=
+ablity" target=3D"_blank"> SQL Alias</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-where-=
+clause.htm" title=3D"SQL Command WHERE: WHERE Statement in SQL" target=3D"_=
+blank"> SQL WHERE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-operat=
+ors.htm" title=3D"SQL Operators, Operators in SQL" target=3D"_blank"> SQL O=
+perators</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-logica=
+l-operators.htm" title=3D"SQL Logical Operators, Logical Operators in SQL" =
+target=3D"_blank"> SQL Logical Operators</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-like-i=
+n-operators.htm" title=3D"SQL LIKE, SQL IN, SQL Operators" target=3D"_blank=
+"> SQL LIKE, IN</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-not-in=
+.htm" title=3D"SQL NOT IN, SQL Operator to retrieve a column that has no en=
+tries in the table or referencing table" target=3D"_blank"> SQL NOT IN</a><=
+/li>
+
+             <li><a href=3D"https://beginner-sql-tutorial.com/sql-order-by-=
+clause.htm" title=3D"SQL ORDER BY, SQl Sorts Query ORDER BY" target=3D"_bla=
+nk"> SQL ORDER BY</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-group-=
+functions.htm" title=3D"SQL SQL Group Functions, SQL Group Rows, COUNT, MAX=
+, MIN, AVG, SUM, DISTINCT" target=3D"_blank"> SQL Group Functions</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-group-=
+by-clause.htm" title=3D"SQL GROUP BY, SQL GROUP BY Clause" target=3D"_blank=
+"> SQL GROUP BY</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-having=
+-clause.htm" title=3D"SQL HAVING Filter, Filter Data SQL HAVING" target=3D"=
+_blank"> SQL HAVING</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-insert=
+-statement.htm" title=3D"SQL INSERT, INSERT Data Rows with SQL INSERT State=
+ment" target=3D"_blank"> SQL INSERT</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-update=
+-statement.htm" title=3D"SQL UPDATE, Modify Data Rows using SQL UPDATE" tar=
+get=3D"_blank"> SQL UPDATE</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-delete=
+-statement.htm" title=3D"SQL DELETE, SQL Delete Rows in Table Statement" ta=
+rget=3D"_blank"> SQL DELETE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-create=
+database.htm" title=3D"SQL CREATE DATABASE: CREATE DATABASE used to create =
+a new database" target=3D"_blank"> SQL CREATE DATABASE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-use-da=
+tabase.htm" title=3D"SQL USE DATABASE: USE Statment is used to selet a data=
+ base" target=3D"_blank"> SQL USE DATABASE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-alterd=
+atabase.htm" title=3D"SQL ALTER DATABASE: ALTER DATABASE is used to change =
+characteristics of a database" target=3D"_blank"> SQL ALTER DATABASE</a></l=
+i>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-dropda=
+tabase.htm" title=3D"SQL DROP DATABASE: DROP DATABASE is used to drop a dat=
+abase, delete all database objects tables, views, procedures, etc" target=
+=3D"_blank"> SQL DROP DATABASE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-data-t=
+ypes.htm" title=3D"SQL DATABASE Data Types: Define type of data an object i=
+s holding  for columns of a table, local/global variables, input/output arg=
+uments of procedures" target=3D"_blank"> SQL DATA TYPES</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-comman=
+d-categories.html" title=3D"SQL Commands: 4 Functional SQL Categories; Data=
+ Definition DDL, Data Manipulation DML, Transaction Control Language TCL, D=
+ata Control Language DCL" target=3D"_blank"> SQL COMMAND Groups</a></li>
+
+
+             <li><a href=3D"https://beginner-sql-tutorial.com/sql-create-st=
+atement.htm" title=3D"SQL CREATE TABLE, Create SQL Tables to Store Data, De=
+fine Integrity Constraints, Primary Key, Unique Key, Foreign Key" target=3D=
+"_blank"> SQL CREATE TABLE</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-alter-=
+table.htm" title=3D"SQL ALTER TABLE, Alter Command Statement to Modify SQL =
+Table Structure" target=3D"_blank"> SQL ALTER TABLE</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-integr=
+ity-constraints.htm" title=3D"SQL Integrity Constrain, SQL Constraints, For=
+eign Key, Not Null, Unique, Check" target=3D"_blank"> SQL Integrity Constra=
+in</a></li>		=09
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-auto-i=
+ncrement.htm" title=3D"SQL AUTO INCREMENT: AUTO INCREMENT Field; Auto gener=
+ating values for a column, AUTO INCREMENT field: table primary key created =
+automatically" target=3D"_blank"> SQL AUTO INCREMENT</a></li>		=09
+             <li><a href=3D"https://beginner-sql-tutorial.com/sql-joins.htm=
+" title=3D"SQL Joins, SQL Query to Retrieve Rows from Two or More Tables" t=
+arget=3D"_blank"> SQL JOINS</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-rename=
+.htm" title=3D"SQL RENAME, Rename a table in SQL" target=3D"_blank"> SQL RE=
+NAME</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-views.=
+htm" title=3D"SQL VIEWS, VIEW in a Virtual Table" target=3D"_blank"> SQL VI=
+EWS</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-subque=
+ry.htm" title=3D"SQL Subquery, SQL Query in a Query, Subquery or Inner quer=
+y or Nested query" target=3D"_blank"> SQL Subquery</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-index.=
+htm" title=3D"SQL Indexes, Use SQL Index to Retrieve Rows" target=3D"_blank=
+"> SQL Indexes</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-grant-=
+revoke-privileges-roles.htm" title=3D"SQL GRANT, SQL REVOKE, DCL Commands, =
+SQL Database Security"> SQL GRANT, REVOKE</a></li>
+               =20
+               =20
+             		<li><a href=3D"https://beginner-sql-tutorial.com/oracle-func=
+tions.htm" title=3D"Oracle Functions, Single Row or Scalar Functions &amp; =
+Group Functions" target=3D"_blank"> Oracle Functions</a></li>
+              =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-select=
+-into-statement.htm" title=3D"SQL SELECT INTO: This SQL statement copies da=
+ta from one table and inserts it into a new table" target=3D"_blank"> SQL S=
+ELECT INTO</a></li>
+             <li><a href=3D"https://beginner-sql-tutorial.com/sql-select-to=
+p.htm" title=3D"SQL SELECT TOP: SQL TOP statement is used to return the top=
+ X numbers or N Percent of rows from the database table. MSSQL server and M=
+S Access database only support the SELECT TOP commmand" target=3D"_blank"> =
+SQL SELECT TOP</a></li>
+            =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-null.h=
+tm" title=3D"SQL NULL: SQL NULL value represents a blank value in a table. =
+The NULL value is used for identifying any missing entries in a table" targ=
+et=3D"_blank"> SQL NULL</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/sql-query-=
+tuning.htm" title=3D"SQL Tuning or SQL Optimization: Optimizing SQL Stateme=
+nts used to retrieve data from the database, done by writing the best SQL q=
+ueries for better faster performance" target=3D"_blank"> SQL Tuning or SQL =
+Optimization</a></li>
+             <li><a href=3D"https://beginner-sql-tutorial.com/sql-tutorial-=
+tips.htm" title=3D"Sql Tuning Tips,  list of queries used reqularly and how=
+ these sql queries can be optimized for better performance" target=3D"_blan=
+k"> SQL Tuning Tips, Optimize SQL</a></li>
+<li><a href=3D"https://beginner-sql-tutorial.com/sql-like-wildcard-operator=
+s.htm" title=3D"SQL WILDCARD Operators are used in conjunction with the LIK=
+E operator to enhance one's search in a database table. SQL supports two ma=
+in Wild Card operators" target=3D"_blank"> SQL WildCard Operators</a></li>=
+=20
+
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-rank=
+-function.htm" title=3D"MSSQL RANK function is used to rank the repeating v=
+alues such that similar values are ranked the same" target=3D"_blank"> MSSQ=
+L RANK Function</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-dens=
+e_rank-function.htm" title=3D"DENSE_RANK function is used to rank the repea=
+ting values so that similar values are ranked the same without gaps between=
+ the rankings" target=3D"_blank"> MSSQL DENSE_RANK</a></li>
+               =20
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-ntil=
+e-function.htm" title=3D"MSSQL NTILE Function splits rows into a pre-specif=
+ied number of groups. first group starts with one, second with two. Each ro=
+w, NTILE returns the number of the group the row belongs" target=3D"_blank"=
+> MSSQL NTILE Function</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-row-=
+number.htm" title=3D"MSSQL ROW_NUMBER function returns the serial number of=
+ the concerned row in particular partition group. Each partition group firs=
+t row starts with ." target=3D"_blank"> MSSQL ROW_NUMBER Function</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-row-=
+count.htm" title=3D"MSSQL Row Count Function: The @@ ROW COUNT variable ret=
+urns the number of rows read by the last executed statement. If no rows are=
+ returned, then value of @@ROWCOUNT variable is set to zero" target=3D"_bla=
+nk"> MSSQL @@ROWCOUNT Variable</a></li>
+                <li><a href=3D"https://beginner-sql-tutorial.com/mssql-cast=
+-function.htm" title=3D"MSSQL Cast Function: The MSSQL CAST FUNCTION is use=
+d to convert an expression from one data type to another datatype" target=
+=3D"_blank"> MSSQL CAST Function</a></li>
+        =20
+</ul>
+	 =20
+      <h1><span class=3D"lightblue">Other SQL Tutorial</span></h1>
+     =20
+      <ul class=3D"sidemenu">
+        <li><a href=3D"https://plsql-tutorial.com/"> PL/SQL Tutorial</a></l=
+i><br>
+		<li>
+		=09
+           =20
+         </li>
+      </ul>
+      <div class=3D"leftside_search">
+        	<form action=3D"https://www.google.com/cse" id=3D"cse-search-box" =
+target=3D"_blank" class=3D"searchform">
+              <div>
+               =20
+               =20
+                <input type=3D"text" name=3D"q" size=3D"31">
+                <input type=3D"submit" name=3D"sa" value=3D"Search">
+              </div>
+            </form>
+        </div>
+	    <ul class=3D"left_side_contact_btn">
+        	<li><a href=3D"https://beginner-sql-tutorial.com/contact-us.html">=
+<span>Contact</span></a></li>
+        </ul>
+	  </div>
+    <div id=3D"main">
+	<br>
+
+	 <h1>SQL Tuning or SQL Optimization</h1>
+<p>Sql Statements are used to retrieve data from the database. We can get s=
+ame results by writing different sql queries.
+But use of the best query is important when performance is considered. So y=
+ou need to sql query tuning based on the requirement.
+Here is the list of queries which we use reqularly and how these sql querie=
+s can be optimized for better performance.</p>=20
+
+<p>
+
+
+</p>
+
+<h3>SQL Tuning/SQL Optimization Techniques:</h3>
+
+<p><strong>1)</strong> The sql query becomes faster if you use the actual c=
+olumns names in SELECT statement instead of than '*'. </p>
+
+<p><strong>For Example:</strong>
+Write the query as
+</p>
+
+<p class=3D"notranslate"><code>=20
+SELECT id, first_name, last_name, age, subject FROM student_details;=20
+</code></p>
+
+<p>Instead of:</p>
+
+<p class=3D"notranslate"><code>
+  SELECT * FROM student_details;
+</code></p>
+
+<p>&nbsp;</p>
+<p><strong>2) </strong>HAVING clause is used to filter the rows after all t=
+he rows are selected. It is just like a filter. Do not use HAVING clause fo=
+r any other purposes.
+  <br>
+    <strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT subject, count(subject) <br>
+FROM student_details <br>
+WHERE subject !=3D 'Science' <br>
+AND subject !=3D 'Maths' <br>
+GROUP BY subject;
+</code></p>
+
+<p>Instead of:</p>
+
+<p class=3D"notranslate"><code>
+SELECT subject, count(subject) <br>
+FROM student_details <br>
+GROUP BY subject <br>
+HAVING subject!=3D 'Vancouver' AND subject!=3D 'Toronto';
+</code></p>
+
+<p>&nbsp;</p>
+<p><strong>3) </strong>Sometimes you may have more than one subqueries in y=
+our main query. Try to minimize the number of subquery block in your query.
+  <br>
+    <strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT name <br>
+FROM employee <br>
+WHERE (salary, age ) =3D (SELECT MAX (salary), MAX (age)   <br>
+                   FROM employee_details)  <br>
+AND dept =3D 'Electronics'; <br>
+</code></p>
+
+
+<p>Instead of: </p>
+<p class=3D"notranslate"><code>
+SELECT name <br>
+FROM employee<br>
+WHERE salary =3D (SELECT MAX(salary) FROM employee_details) <br>
+AND age =3D (SELECT MAX(age) FROM employee_details) <br>
+AND emp_dept =3D 'Electronics';
+</code></p>
+
+<p>&nbsp;</p>
+<p><strong>4) </strong> Use operator EXISTS, IN and table joins appropriate=
+ly in your query.
+  <br>
+    <strong>a) </strong>Usually IN has the slowest performance. <br>
+    <strong>b) </strong>IN is efficient when most of the filter criteria is=
+ in the sub-query. <br>
+    <strong>c) </strong>EXISTS is efficient when most of the filter criteri=
+a is in the main query.</p>
+<p><strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+Select * from product p <br>
+where EXISTS=20
+(select * from order_items o <br>
+where o.product_id =3D p.product_id)
+</code></p>
+
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+Select * from product p <br>
+where product_id IN <br>
+(select product_id from order_items
+</code></p>
+
+<p>&nbsp;</p>
+<p><strong>5) </strong>Use EXISTS instead of DISTINCT when using joins whic=
+h involves tables having one-to-many relationship.
+  <br>
+    <strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT d.dept_id, d.dept <br>
+FROM dept d  <br>
+WHERE EXISTS ( SELECT 'X'=20
+                      FROM employee e=20
+                      WHERE e.dept =3D d.dept);
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT DISTINCT d.dept_id, d.dept <br>
+FROM dept d,employee e <br>
+WHERE e.dept =3D e.dept;
+</code></p>
+
+<p>&nbsp;</p>
+<p><strong>6) </strong>Try to use UNION ALL in place of UNION.
+  <br>
+    <strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name  <br>
+FROM student_details_class10   <br>
+UNION ALL   <br>
+SELECT id, first_name  <br> =20
+FROM sports_team;
+</code></p>
+
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, subject  <br>
+FROM student_details_class10  <br>
+UNION <br>
+SELECT id, first_name   <br>
+FROM sports_team;=20
+</code></p>
+
+
+
+<p>&nbsp;</p>
+<p><strong>7) </strong> Be careful while using conditions in WHERE clause.=
+=20
+  <br>
+    <strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age FROM student_details WHERE age &gt; 10;
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age FROM student_details WHERE age !=3D 10;
+</code></p>
+
+<p></p>
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details <br>
+WHERE first_name LIKE 'Chan%';<br>
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details <br>
+WHERE SUBSTR(first_name,1,3) =3D 'Cha';<br>
+</code></p>
+
+<p></p>
+
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details <br>
+WHERE first_name LIKE NVL ( :name, '%');<br>
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details <br>
+WHERE first_name =3D NVL ( :name, first_name);<br>
+</code></p>
+
+<p></p>
+
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT product_id, product_name <br>
+FROM product  <br>
+WHERE unit_price BETWEEN MAX(unit_price) and MIN(unit_price)
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT product_id, product_name <br>
+FROM product <br>
+WHERE unit_price &gt;=3D MAX(unit_price)  <br>
+and unit_price &lt;=3D MIN(unit_price)
+</code></p>
+
+<p></p>
+
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, name, salary  <br>
+FROM employee <br>
+WHERE dept =3D 'Electronics'  <br>
+AND location =3D 'Bangalore';
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, name, salary  <br>
+FROM employee <br>
+WHERE dept || location=3D 'ElectronicsBangalore';
+</code></p>
+
+<p></p>
+<p>Use non-column expression on one side of the query because it will be pr=
+ocessed earlier.</p>
+
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, name, salary  <br>
+FROM employee <br>
+WHERE salary &lt; 25000;=20
+</code></p>
+
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, name, salary  <br>
+FROM employee <br>
+WHERE salary + 10000 &lt; 35000;=20
+</code></p>
+
+<p></p>
+
+<p>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details  <br>
+WHERE age &gt; 10;
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT id, first_name, age  <br>
+FROM student_details  <br>
+WHERE age NOT =3D 10;
+</code></p>
+
+<p></p>
+
+<p><strong>8) </strong>  Use DECODE to avoid the scanning of same rows or j=
+oining the same table repetitively.
+DECODE can also be made used in place of GROUP BY or ORDER BY clause.
+<br>
+<strong>For Example: </strong>Write the query as </p>
+<p class=3D"notranslate"><code>
+SELECT id=20
+FROM employee <br>
+WHERE name LIKE 'Ramesh%' <br>=20
+and location =3D 'Bangalore';
+</code></p>
+<p>Instead of:</p>
+<p class=3D"notranslate"><code>
+SELECT DECODE(location,'Bangalore',id,NULL) id
+FROM employee <br>
+WHERE name LIKE 'Ramesh%';=20
+</code></p>
+
+<p></p>
+
+<p><strong>9) </strong> To store large binary objects, first place them in =
+the file system and add the file path in the database.</p>
+
+<p><strong>10) </strong> To write queries which provide efficient performan=
+ce follow the general SQL standard rules. </p>
+<p>
+<strong>a) </strong> Use single case for all SQL verbs<br>
+<strong>b) </strong> Begin all SQL verbs on a new line<br>
+<strong>c) </strong> Separate all words with a single space <br>
+<strong>d) </strong> Right or left aligning verbs within the initial SQL ve=
+rb
+</p>
+
+<p>&nbsp;</p>
+<p class=3D"books_marks_div"><a><strong><u>BookMark This Page</u></strong><=
+/a>
+    <!-- AddThis Button BEGIN -->
+   =20
+    <a href=3D"https://www.addthis.com/bookmark.php"><img src=3D"https://s9=
+.addthis.com/button1-bm.gif" width=3D"125" height=3D"16" border=3D"0" alt=
+=3D""></a>
+    <!-- AddThis Button END -->
+   </p>
+   <div class=3D"bottom_search">
+        	<form action=3D"https://www.google.com/cse" id=3D"cse-search-box" =
+target=3D"_blank" class=3D"searchform">
+              <div>
+               =20
+               =20
+                <input type=3D"text" name=3D"q" size=3D"31">
+                <input type=3D"submit" name=3D"sa" value=3D"Search">
+              </div>
+            </form>
+        </div>
+</div>
+=09
+<div id=3D"rightbar">
+			<br>
+     =20
+      <!-- Begginner SQL Resp -->
+      <ins class=3D"adsbygoogle" style=3D"display:block" data-ad-client=3D"=
+ca-pub-7145876768079602" data-ad-slot=3D"2642051340" data-ad-format=3D"auto=
+" data-full-width-responsive=3D"true"></ins>
+     =20
+
+
+    </div>
+  </div>
+ =20
+  <div id=3D"footer">
+    <p class=3D"align-center"> =A9 2007-2025 <strong><a href=3D"https://beg=
+inner-sql-tutorial.com/sql.htm" title=3D"Beginner SQL Tutorials, Tutorials =
+for SQL Beginners Home Page">Beginner-Sql-Tutorial.com</a> <a href=3D"https=
+://beginner-sql-tutorial.com/privacy-policy-disclaimer-terms-of-use.htm" ti=
+tle=3D"Beginner SQL Tutorials, Tutorials for SQL Beginners Policies"> | Beg=
+inner-SQL-Tutorial.com Privacy Policy | </a> All rights Reserved</strong> |=
+ <a href=3D"https://beginner-sql-tutorial.com/credits.html" title=3D"Beginn=
+er SQL Tutorials, SQL Tutorial Credits">SQL Tutorial Credits</a>
+<a href=3D"https://beginner-sql-tutorial.com/contact-us.html" class=3D"cont=
+act_footer"><span>Contact</span></a></p>
+  </div>
+</div>
+
+
+
+</body></html>
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://beginner-sql-tutorial.com/images/BrightSide.css
+
+@charset "windows-1252";
+
+* { padding: 0px; margin: 0px; }
+
+body { margin: 0px; padding: 0px; color: rgb(51, 51, 51); background: url("=
+bg.gif") repeat-x rgb(169, 186, 195); text-align: center; font-family: Verd=
+ana, Tahoma, Helvetica, sans-serif; font-size: 0.875em; line-height: 1.8em;=
+ }
+
+#division { background: rgb(131, 172, 202); box-sizing: border-box; height:=
+ 120px; padding-top: 15px; width: 821px; }
+
+a { color: rgb(66, 132, 176); background-color: inherit; text-decoration: u=
+nderline; }
+
+a:hover { color: rgb(66, 132, 176); text-decoration: underline; background-=
+color: inherit; }
+
+h1, h2, h3 { font: bold 1em "Trebuchet MS", Arial, sans-serif; color: rgb(5=
+1, 51, 51); }
+
+h1 { font-size: 1.25em; color: rgb(0, 0, 0); }
+
+h2 { font-size: 1.4em; text-transform: none; }
+
+h3 { font-size: 1.3em; }
+
+h4 { font-size: 12px; }
+
+p, h1, h2, h3 { margin: 10px 15px; }
+
+ul, ol { margin: 10px 30px; padding: 0px 15px; color: rgb(66, 132, 176); }
+
+ul span, ol span { color: rgb(51, 51, 51); }
+
+img { border: 2px solid rgb(204, 204, 204); }
+
+img.no-border { border: none; }
+
+img.float-right { margin: 5px 0px 5px 15px; }
+
+img.float-left { margin: 5px 15px 5px 0px; }
+
+a img { border: 2px solid rgb(86, 142, 182); }
+
+a:hover img { border: 2px solid rgb(204, 204, 204) !important; }
+
+code { margin: 5px 0px; padding: 10px; text-align: left; display: block; ov=
+erflow: auto; font: 500 1.1em / 1.4em "Lucida Console", "courier new", mono=
+space; background: rgb(250, 250, 250); border-width: 1px 1px 1px 4px; borde=
+r-style: solid; border-color: rgb(242, 242, 242) rgb(242, 242, 242) rgb(242=
+, 242, 242) rgb(66, 132, 176); border-image: initial; }
+
+acronym { cursor: help; border-bottom: 1px solid rgb(119, 119, 119); }
+
+blockquote { margin: 15px; padding: 0px 0px 0px 20px; background: rgb(250, =
+250, 250); border-width: 1px 1px 1px 4px; border-style: solid; border-color=
+: rgb(242, 242, 242) rgb(242, 242, 242) rgb(242, 242, 242) rgb(66, 132, 176=
+); border-image: initial; color: rgb(66, 132, 176); font: bold 1.2em / 1.5e=
+m Georgia, "Bookman Old Style", serif; }
+
+form { margin: 10px; padding: 0px; border: 1px solid rgb(242, 242, 242); ba=
+ckground-color: rgb(250, 250, 250); }
+
+label { display: block; font-weight: bold; margin: 5px 0px; }
+
+input { padding: 2px; border: 1px solid rgb(238, 238, 238); font: 1em Verda=
+na, sans-serif; color: rgb(0, 0, 0); }
+
+textarea { width: 300px; padding: 2px; font: 1em Verdana, sans-serif; borde=
+r: 1px solid rgb(238, 238, 238); height: 100px; display: block; color: rgb(=
+119, 119, 119); }
+
+input.button { margin: 0px; font: bold 1em Arial, sans-serif; border: 1px s=
+olid rgb(204, 204, 204); background: rgb(255, 255, 255); padding: 2px 3px; =
+color: rgb(66, 132, 176); }
+
+#header form.searchform { top: 0.75em; right: 0px; float: right; }
+
+form.searchform { background: transparent; margin: 0px; padding: 0px; }
+
+form.searchform input.textbox { margin: 0px; background: rgb(255, 255, 255)=
+; color: rgb(0, 0, 0); height: 0.875em; vertical-align: top; border-width: =
+1px; border-style: solid; border-color: rgb(158, 198, 48); width: 1em; }
+
+form.searchform input.button { margin: 0px; background: rgb(250, 250, 250);=
+ color: rgb(0, 0, 0); vertical-align: top; font-family: Arial, sans-serif; =
+font-size: 0.75em; font-weight: bold; padding: 0.125em 0.1875em; border: 1p=
+x solid rgb(242, 242, 242); }
+
+#wrap { background: rgb(255, 255, 255); width: 820px; height: 100%; margin:=
+ 0px auto; text-align: justify; }
+
+#content-wrap { clear: both; margin: 0px; padding: 0px; background: rgb(255=
+, 255, 255); }
+
+#header { position: relative; height: 85px; background: url("headerbg.gif")=
+ 0% 100% repeat-x rgb(0, 0, 0); }
+
+#header h1#logo { position: absolute; margin: 0px; padding: 0px; text-trans=
+form: none; top: 0px; left: 0.2em; font-family: "Trebuchet MS", Arial, sans=
+-serif; font-size: 3.5em; font-weight: bolder; letter-spacing: -0.075em; }
+
+#header h2#slogan { position: absolute; top: 37px; left: 70px; color: rgb(1=
+02, 102, 102); text-indent: 0px; text-transform: none; font-family: Tahoma,=
+ "trebuchet MS", sans-serif; font-size: 0.875em; font-weight: bold; }
+
+#main { float: left; margin-left: 15px; padding: 0px; width: 50%; }
+
+.post-footer { background-color: rgb(250, 250, 250); padding: 5px; margin: =
+20px 15px 0px; border: 1px solid rgb(242, 242, 242); font-size: 95%; }
+
+.post-footer .date { background: url("clock.gif") left center no-repeat; pa=
+dding-left: 20px; margin: 0px 10px 0px 5px; }
+
+.post-footer .comments { background: url("comment.gif") left center no-repe=
+at; padding-left: 20px; margin: 0px 10px 0px 5px; }
+
+.post-footer .readmore { background: url("page.gif") left center no-repeat;=
+ padding-left: 20px; margin: 0px 10px 0px 5px; }
+
+#sidebar { float: left; width: 24%; margin: 0px; padding: 0px; display: inl=
+ine; }
+
+#sidebar ul.sidemenu { list-style: none; margin: 10px 0px 10px 15px; paddin=
+g: 0px; }
+
+#sidebar ul.sidemenu li { margin-bottom: 1px; border: 1px solid rgb(242, 24=
+2, 242); text-align: left; }
+
+#sidebar ul.sidemenu a { display: block; font-weight: bold; color: rgb(51, =
+51, 51); text-decoration: none; padding: 2px 5px 2px 10px; background: rgb(=
+242, 242, 242); border-left: 4px solid rgb(204, 204, 204); min-height: 18px=
+; }
+
+* html body #sidebar ul.sidemenu a { height: 18px; }
+
+#sidebar ul.sidemenu a:hover { padding: 2px 5px 2px 10px; background: rgb(2=
+42, 242, 242); color: rgb(51, 153, 0); border-left: 4px solid rgb(158, 198,=
+ 48); }
+
+#rightbar { float: right; width: 23%; padding: 0px; margin: 0px; }
+
+#footer { clear: both; color: rgb(255, 255, 255); background: rgb(169, 186,=
+ 195); border-top: 5px solid rgb(86, 142, 182); margin: 0px; padding: 0px; =
+height: 50px; font-size: 80%; }
+
+#footer a { text-decoration: none; font-weight: bold; color: rgb(255, 255, =
+255); }
+
+#footer .footer-left { float: left; width: 80%; }
+
+#footer .footer-right { float: right; width: 30%; }
+
+#header ul { z-index: 999999; position: absolute; margin: 0px; padding: 0px=
+; list-style: none; right: 0px; font-family: Arial, "Trebuchet MS", Tahoma,=
+ verdana, sans-serif; font-size: 0.875em; font-weight: bold; bottom: 0.375e=
+m !important; }
+
+#header li { display: inline; margin: 0px; padding: 0px; }
+
+#header a { float: left; background: url("tableft.gif") left top no-repeat;=
+ margin: 0px; padding: 0px 0px 0px 4px; text-decoration: none; }
+
+#header a span { float: left; display: block; background: url("tabright.gif=
+") right top no-repeat; padding: 6px 15px 3px 8px; color: rgb(255, 255, 255=
+); }
+
+#header a span { float: none; }
+
+#header a:hover span { color: rgb(255, 255, 255); }
+
+#header a:hover { background-position: 0% -42px; }
+
+#header a:hover span { background-position: 100% -42px; }
+
+#header #current a { background-position: 0% -42px; color: rgb(255, 255, 25=
+5); }
+
+#header #current a span { background-position: 100% -42px; color: rgb(255, =
+255, 255); }
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.align-left { text-align: left; }
+
+.align-center { text-align: center; }
+
+.align-right { text-align: right; }
+
+.clear { clear: both; }
+
+.green { color: rgb(0, 102, 0); }
+
+.gray { color: rgb(191, 191, 191); }
+
+.blue { color: rgb(0, 102, 255); }
+
+.red { color: rgb(255, 0, 0); }
+
+.black { color: rgb(0, 0, 0); }
+
+.note { color: rgb(51, 51, 51); text-align: justify; }
+
+.SQLTable { margin: 10px 15px; }
+
+.subtopic a { color: rgb(0, 0, 0); text-decoration: none; }
+
+.subtopic a:hover { color: rgb(0, 0, 0); text-decoration: none; }
+
+.lightblue { color: rgb(66, 132, 176); }
+
+@media screen and (max-width: 850px) {
+  #header form.searchform { display: none; }
+  #content-wrap { width: 100%; }
+  #sidebar { width: 24%; }
+  #rightbar { display: none; }
+}
+
+@media screen and (max-width: 769px) {
+  #division { text-align: center; }
+}
+
+@media screen and (max-width: 769px) {
+  #division { text-align: center; }
+}
+
+.left_cat { background: none 0px 0px repeat scroll rgb(131, 172, 202); bord=
+er-radius: 5px; float: none; margin: 10px; min-height: 45px; overflow: hidd=
+en; display: none; }
+
+.left_cat > img { border: medium none; float: right; margin: 16px; cursor: =
+pointer; }
+
+.left_cat > p { color: rgb(255, 255, 255); display: inline-block; font-size=
+: 18px; }
+
+.leftside_search, .left_side_contact_btn, a.contact_footer { display: none;=
+ }
+
+.bottom_search { border: medium none; padding: 6px 0px; text-align: center;=
+ display: none; }
+
+.bottom_search form { border: 0px; }
+
+.bottom_search input[type=3D"text"] { height: 21px; width: 70%; }
+
+@media (max-width: 550px) {
+  #header h1#logo { font-size: 27px; text-align: center; position: initial =
+!important; }
+  #header h2#slogan { margin: 0px auto; text-align: center; position: initi=
+al !important; }
+  #sidebar { box-sizing: border-box; float: none; margin: 0px auto; width: =
+90%; }
+  #sidebar ul.sidemenu { margin: 10px 15px; }
+  #main { box-sizing: border-box; margin: 0px auto; width: 100%; }
+  #main textarea { width: 100%; }
+  #main ol { margin: 0px auto; }
+  .img_ad { max-width: 77% !important; }
+  #google_image_div { width: 100%; }
+  #google_ads_frame1, iframe { width: 96% !important; }
+  #division { width: 100%; }
+  .notranslate .SQLTable { box-sizing: border-box; display: block; font-siz=
+e: 10px; width: auto; text-align: center; }
+  #header ul { left: 0px; margin: 0px auto; text-align: left; }
+  #header a { display: inline-block; float: none; }
+  #header { height: 105px; padding-top: 5px; background-color: rgb(255, 255=
+, 255); }
+  body { background: url("mobile_bg.jpg") 0px 0px repeat-x scroll rgb(169, =
+186, 195); }
+  a.gflag:nth-child(7) { display: none; }
+  a.gflag { font-size: 12px !important; }
+  #header li:last-child { display: none; }
+  .left_cat { display: block; }
+  body .at4-hide, .at4-hide-content { bottom: 0px; top: inherit; width: 100=
+%; }
+  .contact_footer { display: block !important; }
+  body .atss a { margin: 0px 0px -20px; width: 20%; }
+  .bottom_search { display: block; }
+}
+
+@media (max-width: 350px) {
+  .notranslate .SQLTable { box-sizing: border-box; display: block; font-siz=
+e: 9px; width: auto; text-align: center; }
+  table { font-size: 9px; display: block; margin: 0px auto; width: 100%; }
+}
+
+@media (max-width: 767px) {
+  #wrap { width: 90%; }
+  #sidebar { display: none; }
+  #main > br:nth-child(1) { display: none; }
+  #main h3 { text-align: left; }
+  #division { overflow: hidden; width: 100%; }
+  #main > img { max-width: 100%; }
+  #division { display: none; }
+  #footer { height: auto; }
+  .right_sec_home { display: block !important; float: none !important; marg=
+in: 0px auto !important; width: 100% !important; }
+  .home_right_sec_adds { display: none; }
+  .change_lan { margin: 0px auto; overflow: hidden; position: absolute; rig=
+ht: 5%; text-align: center; top: 50px; width: 150px; z-index: 999999; }
+  #main > p { overflow: hidden; }
+  .books_marks_div { text-align: left; }
+  #main { overflow: hidden; }
+  table { font-size: 9px; display: block; width: 100%; }
+  body .at4-hide, .at4-hide-content { opacity: 1 !important; }
+  body .at4-hide { display: block !important; }
+  body .at4-visually-hidden { clip: inherit !important; }
+}
+
+@media (min-width: 551px) and (max-width: 850px) {
+  #wrap { width: 90%; }
+  #sidebar { width: 35%; }
+  #main { margin: 0px auto; width: 65%; }
+  #sidebar ul.sidemenu a { padding: 2px 5px; }
+  #sidebar ul.sidemenu { margin: 10px 0px 10px 5px; }
+  #main ol { margin: 0px auto; }
+  #header h1#logo { font-size: 32px; margin-bottom: -10px; padding-top: 10p=
+x; position: inherit; }
+  #header h2#slogan { position: initial; }
+  .SQLTable { font-size: 10px; margin: 10px 15px; width: auto; }
+  #sidebar { display: block !important; }
+  #main > img { max-width: 100%; }
+  #cse-search-box input[type=3D"text"] { width: 70%; }
+  #header form.searchform { position: absolute; width: 50%; border: none; d=
+isplay: block; }
+  #cse-search-box > div { text-align: right; }
+  #division { overflow: hidden; width: 100%; }
+  table { font-size: 9px; display: block; width: 100%; }
+  .right_sec_home { display: block !important; float: none !important; marg=
+in: 0px auto !important; width: 100% !important; }
+  .home_right_sec_adds { display: none; }
+  .change_lan { margin: 0px auto; overflow: hidden; position: absolute; rig=
+ht: 18%; text-align: center; top: 15px; width: 170px; }
+  #header li:last-child { display: none; }
+  #header form.searchform { display: none; }
+  body .atss a { margin: 0px 0px -20px; width: 20%; }
+  .contact_footer { display: none !important; }
+}
+
+@media (min-width: 551px) and (max-width: 620px) {
+  #header h1#logo { font-size: 28px; }
+}
+
+@media (min-width: 551px) and (max-width: 2000px) {
+  .left_cat { display: none; }
+}
+
+@media (min-width: 551px) and (max-width: 980px) {
+  .leftside_search, .left_side_contact_btn, a.contact_footer { display: blo=
+ck; }
+  .left_side_contact_btn { list-style: outside none none; margin: 20px 0px;=
+ }
+  .leftside_search input[type=3D"text"] { width: 65% !important; }
+  body .at4-hide { top: inherit; bottom: 0px !important; width: 100% !impor=
+tant; }
+  .left_side_contact_btn a { background: none 0px 0px repeat scroll rgb(242=
+, 242, 242); border-left: 4px solid rgb(204, 204, 204); color: rgb(51, 51, =
+51); display: block; font-weight: bold; min-height: 18px; padding: 2px 5px =
+2px 10px; text-decoration: none; }
+}
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://beginner-sql-tutorial.com/images/bg.gif
+
+R0lGODlhAQD/ANUAAKi5wv7+/vr6+pqpsZinr/n5+aHEQpyrtPf394yaofz8/JKhqY6cpKDCQZCf
+p5+vuKi5waKzu6e4wf39/aTIQ6a2v56utpWkrJ7AQaPGQ5y9QKW2vqGxuqS0vam6w////4OsygAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAP8AAAY9wI9w
+SCwaj8ikcmkMBCYKQQFByRgaGA1oy+16v+CweEwum8/oBMOxuBAGB8uDE+lsKhIIAODp+/+AgYJ+
+QQA7
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://beginner-sql-tutorial.com/images/headerbg.gif
+
+R0lGODlhAQBVALMAAPr6+p7AQf39/aHEQqPGQ6DCQff395y9QPn5+aTIQ/z8/P7+/v///wAAAAAA
+AAAAACH5BAAAAAAALAAAAAABAFUAAAQTkMlJq704623XEgqAGAkxFMERAQA7
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://beginner-sql-tutorial.com/images/tableft.gif
+
+R0lGODlhBABUAPcEAIOsyp7GMKjMRZC0zwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAAEAFQA
+AAhDAAkQECBgIMGDCBMqXMjwYICHECNKnEixosWLGDNq3MgxosABAwiAHEmypMmTKEkCWMmypcuX
+MGPKnEmzps2bOFsGBAA7
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://beginner-sql-tutorial.com/images/tabright.gif
+
+R0lGODlhrwBUAPcEAIOsyp7GMKjMRZC0zwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAQALAAAAACvAFQA
+AAj/AAUIHEiwoMGDCBMqXMiwocOHECNKFECg4sSLGDNq3MhxosWOIEOKHElSIIGSKFOqXEnwJMuX
+MGN6lEmzps2WN3PqXOlyp8+fHHsCHUr0odCiSJMWPKq0aVECAaJKnUq1qtWrWLNq3cq1q9evYMNK
+hSq2rNmzaNOqFUt2rdu3cOPKDdB2rt27ePPS1cu3r9+ydf8KHkw4MOHDiO8aTsy4cdrFjiNL7gp5
+suXLUytj3ixZM+fPiT2DHi1YNOnTek2jXj1XNevXbl3Dnn1WNu3bYG3j3r1VN+/fVn0DHx5VOHHg
+xo/zTq4cN/PmtJ9Dhy19Ouvq1lFjz056O3fQ3r9z/yYwoLz58+jTq1/Pvr379/Djy59Pv/6AiuTt
+69/Pv7////VVBOCABBZo4IHm5Yfgggw26GB5Cj4o4YQU0hdhhRhmqOGFGnboIYMcfijiiP6FSOKJ
+KMZnYoostnjeii7GiCIBANRo44045qjjjjz26OOPQAYp5JBEFmkjjUYmqeSSTDbppJFIPinllFRW
+aSUAUV6p5ZZcdomll2CGKWaSWY5p5plolonmmmxuqWabcMbZ5Jty1mlnkHTeqeeeN+bJ5592+gno
+oG0KSuihZhqK6KJeKsroo1c6CumkUkpK6aVLWorppkRqyumnP3oK6qg6ikrqqTWaiiqpqq4Kaquu
+ch4Ka6yYzkorpbbeCmmuujLKa6+I/gosocIOCygBAQEAOw==
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.google.com/cse/static/images/1x/en/branding.png
+
+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
+MDr3msEAAAAASUVORK5CYII=
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://beginner-sql-tutorial.com/images/menuIcon.png
+
+iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABASURBVHja7NGxDYAw
+DADBswVSNs7qQGN2iKxUuQG++cDEQFhXeBKfHm/iaordUVW6pEZxBpwBGwb8AAAA//8DAEPbE2l/
+fFbsAAAAAElFTkSuQmCC
+
+------MultipartBoundary--X4jtq4TiDISzTCnU299600N6StWrEeos2F7L1HmQb4------
