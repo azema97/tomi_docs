@@ -52,8 +52,6 @@ No todo es “mágico” y sin riesgos:
 
 ---
 
-Si querés **profundizar en cómo tú podrías usar MCP** en tus scripts o entornos (por ejemplo en Python, integrando con bases de datos, automatización, etc.), puedo buscar algunos ejemplos concretos o librerías SDK que ya lo soporten. ¿Te parece que lo haga?
-
 [1]: https://www.redhat.com/en/topics/ai/what-is-model-context-protocol-mcp?utm_source=chatgpt.com "What is Model Context Protocol (MCP)?"
 [2]: https://www.cio.com/article/4035003/mcp-explained-the-ai-gamechanger.html?utm_source=chatgpt.com "MCP explained: The AI gamechanger | CIO"
 [3]: https://medium.com/ai-essentials/model-context-protocol-mcp-what-it-is-and-why-it-matters-12f2e12449c0?utm_source=chatgpt.com "Model Context Protocol (MCP): What It Is and Why It Matters | by Tobi Plumpter | AI Essentials | Medium"
